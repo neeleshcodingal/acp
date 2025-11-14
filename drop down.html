@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marks Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 25px;
+      background: #f4f4f4;
+    }
+    fieldset {
+      width: 360px;
+      padding: 15px;
+      border-radius: 6px;
+      background: white;
+      border: 1px solid #ccc;
+    }
+    legend {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    select, input {
+      margin-top: 6px;
+      padding: 6px;
+    }
+    .row {
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <fieldset>
+    <legend>Marks Entry</legend>
+
+    <!-- Auto average calculation -->
+    <form oninput="avg.value = (parseInt(mark1.value) + parseInt(mark2.value) + parseInt(mark3.value)) / 3">
+
+      <div class="row">
+        <label for="studentName">Student Name</label><br>
+        <input type="text" id="studentName" placeholder="Enter name">
+      </div>
+
+      <div class="row">
+        <label>Subject & Marks</label><br>
+
+        <select id="sub1">
+          <option>Maths</option>
+          <option>English</option>
+          <option>Science</option>
+        </select>
+        <input type="number" id="mark1" value="0">
+      </div>
+
+      <div class="row">
+        <select id="sub2">
+          <option>Maths</option>
+          <option>English</option>
+          <option>Science</option>
+        </select>
+        <input type="number" id="mark2" value="0">
+      </div>
+
+      <div class="row">
+        <select id="sub3">
+          <option>Maths</option>
+          <option>English</option>
+          <option>Science</option>
+        </select>
+        <input type="number" id="mark3" value="0">
+      </div>
+
+      <b>Average Marks:</b>
+      <output name="avg"></output>
+
+    </form>
+  </fieldset>
+
+</body>
+
+</html>
