@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML with Web Media</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Media Page</h1>
+        <p>Semantic HTML with image & video loaded from the web</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Videos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Web Image -->
+        <section>
+            <h2>Image from Web</h2>
+            <img 
+                src="https://via.placeholder.com/400" 
+                alt="Sample Web Image"
+                width="400"
+            >
+            <p>This image is loaded from the internet.</p>
+        </section>
+
+        <!-- Web Video -->
+        <article>
+            <h2>Video from Web</h2>
+            <video width="500" controls>
+                <source 
+                    src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" 
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>This video is streamed directly from a web URL.</p>
+        </article>
+
+        <!-- YouTube iframe -->
+        <aside>
+            <h3>YouTube Video (iframe)</h3>
+            <iframe 
+                width="400" 
+                height="225" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+            <p>Embedded YouTube video using iframe.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>© 2025 My Website</p>
+    </footer>
+
+</body>
+</html>
